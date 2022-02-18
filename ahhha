@@ -1,0 +1,40 @@
+'''f = open('bekertnevek.txt','w',encoding='UTF-8')
+nevek=""
+while nevek!="vége":
+    nevek=input('Adj nevet')
+    if nevek!="vége" and nevek[0]=="A":
+        f.write(nevek+"\n")
+f.close()
+
+##csak az A betűs nevek a fáflba
+'''
+lista=[]
+szamok=open('bekertszamok.txt')
+for sor in szamok:
+    n=int(sor.strip())
+    lista.append(sor.strip())
+print(lista)
+#összegzés
+
+osszeg=0
+for i in lista:
+    osszeg+=1
+print(osszeg)
+##xprint('Átlag :',osszeg/len(lista))
+db=0
+párososszeg=0
+for i in lista:
+    if i%2==0:
+        db+=1
+        párososszeg+=i
+####print('Páros számok átlaga : ', párososszeg/db)
+i=0
+van=False
+while not van:
+    if lista(i)%3==0:
+        van=True
+    i+=1
+if van:
+    print('van benne 3al oszthato szam')
+else:
+    print('Nincs benne 3mal oszthato szam')
