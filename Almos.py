@@ -82,3 +82,17 @@ atlag=0
 for sor in lista:
     atlag+=sor
 print(atlag/len(lista))
+
+#8feladat
+def prim(a):
+    oszto=0
+    for x in range(1,a+1):
+        if a%x==0:
+           oszto+=1
+    if oszto==2:
+        return 'Prímszám'
+    else:
+        return 'Nem prím'
+
+for i in lista:
+    print(i,prim(i))
