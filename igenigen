@@ -1,0 +1,47 @@
+'''lista=['Szabolcs','Balázs','Zsombor','Antal','Bálint']
+hosszunev=[]
+rovidnev=[]
+for x in lista:
+    if len(x) > 5:
+        hosszunev.append(x)
+    else:
+        rovidnev.append(x)
+print(hosszunev,rovidnev)'''
+
+'''class Diak():
+    def __init__(self,knev,jegy):
+        self.knev = knev
+        self.jegy=jegy
+    def __repr__(self):
+        return f'{self.jegy},{self.knev}'
+    def megbukott(self):
+        if self.jegy==1:
+            return 'megbuktál'
+        else:
+            return 'Atmentél'
+f=open('diakokosztalyzat.txt','r',encoding='utf-8')
+lista=[]
+for sor in f:
+    r=sor.strip().split()
+    print(r)
+    diak=Diak(r[0],int(r[1]))
+    lista.append(diak)
+print(lista)
+for i in lista:
+    print(i,i.megbukott())
+'''
+
+class Ajandek():
+    def __init__(self,mit,ar):
+        self.mit=mit
+        self.ar=ar
+    def __repr__(self):
+        return f'{self.mit},{self.ar}'
+
+f=open('bevasarlolista.txt','r',encoding='UTF-8')
+lista=[]
+for sor in f:
+    sor=sor.strip().split(';')
+    aj=Ajandek(sor[0],int(sor[1]))
+    lista.append(aj)
+print(lista)
