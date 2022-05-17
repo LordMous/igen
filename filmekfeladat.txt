@@ -1,0 +1,3 @@
+﻿# irasd ki a 2000 előtti filmeket regifilmek.txt-be
+# Az a betűvel kezdődő filmeket irasd ki, csak a címet
+# Add meg a filmek átlagos hosszát 2 tizedesjegyig.
